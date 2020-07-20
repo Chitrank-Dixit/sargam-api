@@ -7,8 +7,8 @@ spec:
     app: sargam-api
   ports:
   - protocol: "TCP"
-    port: 8181
-    targetPort: 8080
+    port: 6000
+    targetPort: 3000
   type: LoadBalancer
 
 ---
@@ -31,4 +31,4 @@ spec:
         image: sargam-api:latest
         imagePullPolicy: Never
         ports:
-        - containerPort: 8080
+        - containerPort: 3000
